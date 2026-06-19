@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sites.bybraga — Criação de Sites Profissionais</title>
+  <meta name="description" content="sites.bybraga — Sites profissionais, landing pages e lojas virtuais com foco em conversão." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  
+</head>
+<body>
+  <!-- HEADER -->
+ <header>
+  <div class="nav-header">
+    <button class="btn hamb" aria-label="Abrir menu" onclick="toggleMobile()">
+      <span class="hamb-icon"></span>
+    </button>
+    <img src="/static/img/imghead.png" alt="Logo" class="header-logo" />
+  </div>
+</header>
+
+  <!-- MENU MOBILE -->
+  <div id="backdrop" onclick="toggleMobile(false)"></div>
+  <nav id="drawer" aria-hidden="true">
+    <a href="#servicos" onclick="toggleMobile(false)">Serviços</a>
+    <a href="#portfolio" onclick="toggleMobile(false)">Portfólio</a>
+    <a href="#faq" onclick="toggleMobile(false)">FAQ</a>
+    <a href="#contato" onclick="toggleMobile(false)">Contato</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+  <div class="container">
+    <h1>Criação de Sites Profissionais</h1>
+    <p class="muted">Transforme sua presença online com design moderno e performance.</p>
+    <a href="#contato" class="btn gold">Começar Agora</a>
+  </div>
+</section>
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2 class="title-lg">Nossos Serviços</h2>
+        <div class="grid">
+          <div class="card">Landing Pages de Alta Conversão</div>
+          <div class="card">Lojas Virtuais Profissionais</div>
+          <div class="card">Sites Institucionais Modernos</div>
+          <div class="card">SEO e Otimização de Performance</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO estilo Netflix -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="title-lg">Portfólio</h2>
+        <div class="carousel-container">
+          <button class="carousel-btn left" onclick="moveCarousel(-1)">❮</button>
+          <div class="carousel" id="carousel">
+
+            <div class="carousel-item projeto-preview">
+  <div class="preview-anim">
+    <div class="projeto-carousel">
+      <img src="/static/img/contrutrack.png" alt="ConstruTrack" class="preview-img" />
+    </div>
+    <div class="preview-overlay">
+      <div class="preview-actions">
+        <a href="#" onclick="openConstructrackModal(true); return false;" class="btn-overlay">Ver mais</a>
+        <button class="btn-overlay" onclick="openConstructrackModal(true)">Detalhes</button>
+      </div>
+    </div>
+  </div>
+  <div class="preview-title">ConstruTrack</div>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <div class="preview-anim">
+    <div class="projeto-carousel">
+      <img src="/static/img/finance-hub.png" alt="Finance Hub" class="preview-img" />
+    </div>
+    <div class="preview-overlay">
+      <div class="preview-actions">
+        <button class="btn-overlay" onclick="openFinanceHubModal(true)">Ver mais</button>
+        <button class="btn-overlay" onclick="openFinanceHubModal()">Detalhes</button>
+      </div>
+    </div>
+  </div>
+  <div class="preview-title">Finance Hub</div>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <div class="preview-anim">
+    <div class="projeto-carousel">
+      <img src="/static/img/ged-recursos-humanos.png" alt="Módulo de Recursos Humanos" class="preview-img projeto-carousel-img" id="projetoImg" />
+      <button class="projeto-carousel-btn prev" onclick="mudarImagemProjeto(-1)">❮</button>
+      <button class="projeto-carousel-btn next" onclick="mudarImagemProjeto(1)">❯</button>
+    </div>
+    <div class="preview-overlay">
+      <div class="preview-actions">
+        <a href="https://example.com/projeto2" target="_blank" rel="noopener" class="btn-overlay">Ver mais</a>
+        <button class="btn-overlay" onclick="openProjectModal()">Detalhes</button>
+      </div>
+    </div>
+  </div>
+  <div class="preview-title">Projeto: Gestão de Documentos (GED)</div>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <a href="https://68085a242d617168facb0365--verdant-naiad-d58384.netlify.app/" target="_blank" rel="noopener" class="preview-link">
+    <div class="preview-anim">
+      <img src="/static/img/jessicafreitas.jpg" alt="Prévia do Projeto" class="preview-img" />
+      <div class="preview-overlay">
+        <span class="preview-text">Ver mais</span>
+      </div>
+    </div>
+    <div class="preview-title">Atendimento Psicologico - Jessica Freitas</div>
+  </a>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <div class="preview-anim">
+    <div class="projeto-carousel">
+      <img src="/static/img/sistema-relatorio-tecnico.png" alt="Sistema de Relatorio Tecnico" class="preview-img" />
+    </div>
+    <div class="preview-overlay">
+      <div class="preview-actions">
+        <button class="btn-overlay" onclick="openProject3Modal(true)">Ver mais</button>
+        <button class="btn-overlay" onclick="openProject3Modal()">Detalhes</button>
+      </div>
+    </div>
+  </div>
+  <div class="preview-title">Sistema de Relatorio Tecnico</div>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <a href="https://example.com/projeto4" target="_blank" rel="noopener" class="preview-link">
+    <div class="preview-anim">
+      <img src="/static/img/preview-projeto4.jpg" alt="Prévia do Projeto 4" class="preview-img" />
+      <div class="preview-overlay">
+        <span class="preview-text">Ver mais</span>
+      </div>
+    </div>
+    <div class="preview-title">Projeto: Landing Page</div>
+  </a>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <a href="https://example.com/projeto5" target="_blank" rel="noopener" class="preview-link">
+    <div class="preview-anim">
+      <img src="/static/img/preview-projeto5.jpg" alt="Prévia do Projeto 5" class="preview-img" />
+      <div class="preview-overlay">
+        <span class="preview-text">Ver mais</span>
+      </div>
+    </div>
+    <div class="preview-title">Projeto: Blog Pessoal</div>
+  </a>
+</div>
+
+            <div class="carousel-item projeto-preview">
+  <a href="https://example.com/projeto6" target="_blank" rel="noopener" class="preview-link">
+    <div class="preview-anim">
+      <img src="/static/img/preview-projeto6.jpg" alt="Prévia do Projeto 6" class="preview-img" />
+      <div class="preview-overlay">
+        <span class="preview-text">Ver mais</span>
+      </div>
+    </div>
+    <div class="preview-title">Projeto: Portfólio</div>
+  </a>
+</div>
+          </div>
+          <button class="carousel-btn right" onclick="moveCarousel(1)">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="section">
+      <div class="container">
+        <h2 class="title-lg">O que nossos clientes dizem</h2>
+        <div class="grid">
+          <div class="card">⭐⭐⭐⭐⭐<br>"Excelente atendimento e resultado incrível!"</div>
+          <div class="card">⭐⭐⭐⭐⭐<br>"Meu site ficou moderno e já estou vendendo mais."</div>
+          <div class="card">⭐⭐⭐⭐⭐<br>"Equipe atenciosa e muito profissional."</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="title-lg">Perguntas Frequentes</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <button onclick="toggleFAQ(this)">Quanto tempo leva para criar um site?</button>
+            <div class="faq-content">Em média 2 a 4 semanas, dependendo da complexidade.</div>
+          </div>
+          <div class="faq-item">
+            <button onclick="toggleFAQ(this)">O site é responsivo?</button>
+            <div class="faq-content">Sim, todos os nossos sites funcionam em celular, tablet e desktop.</div>
+          </div>
+          <div class="faq-item">
+            <button onclick="toggleFAQ(this)">Vocês oferecem suporte?</button>
+            <div class="faq-content">Sim, suporte completo após a entrega.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="title-lg">Entre em Contato</h2>
+        <form class="card contato-form" onsubmit="sendEmail(event)">
+          <label>
+            Nome
+            <input class="input" type="text" id="nome" placeholder="Seu Nome" required>
+          </label>
+          <label>
+            Email
+            <input class="input" type="email" id="email" placeholder="Seu Email" required>
+          </label>
+          <label>
+            Mensagem
+            <textarea class="input" id="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+          </label>
+          <button class="btn gold" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section id="quem-sou-eu" class="section quem-sou-eu">
+  <div class="container quem-sou-eu-container">
+    <div class="quem-sou-eu-info">
+      <h2 class="title-lg">Quem sou eu?</h2>
+      <p>Desenvolvedor comprometido com a entrega de soluções eficientes e busca constante por aprimoramento na área de TI.</p>
+      <ul>
+        <li>Graduado em Análise e Desenvolvimento de Sistemas</li>
+        <li>Experiência em suporte técnico N1/N2</li>
+        <li>Manutenção de hardware/software</li>
+        <li>Administração de sistemas Windows/Linux</li>
+        <li>Conhecimentos em banco de dados SQL (ORACLE, SQL Server)</li>
+        <li>Python com foco em Machine Learning</li>
+        <li>Testes de Software (QA)</li>
+        <li>Análise de dados com Power BI</li>
+      </ul>
+    </div>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="showPrev()">❮</button>
+      <div class="carousel-single">
+        <img id="carousel-img" src="/static/img/imgdev.jpg" alt="Foto do responsável" />
+      </div>
+      <button class="carousel-btn right" onclick="showNext()">❯</button>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+      <div class="dev-info">
+        <img src="/static/img/imgdev.jpg" alt="Julio Costa Braga" class="dev-photo" />
+        <span>Desenvolvido por Julio Costa Braga</span>
+      </div>
+      <span class="brand-footer">© <span id="year"></span> <b>sites.by.braga</b> — Todos os direitos reservados.</span>
+      <nav class="footer-nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5581987370011" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <img src="/static/img/WhatsApp.jpg" alt="WhatsApp" class="whatsapp-icon" />
+</a>
+
+  <!-- MODAL DETALHES DO PROJETO -->
+  <div id="projectModal" class="modal">
+    <div class="modal-overlay" onclick="closeProjectModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProjectModal()">✕</button>
+      
+      <div class="modal-header">
+        <h2>Site Institucional e Agendamento para Psicóloga</h2>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>📋 Resumo</h3>
+          <p>Site institucional e de agendamento para psicóloga online. Desenvolvido com HTML5, CSS3 e JavaScript puro (Vanilla JS), sem dependência de frameworks. Conta com sistema de agendamento interativo com calendário dinâmico, bloqueio de horários por sessão, integração com WhatsApp e layout totalmente responsivo para mobile.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>✨ Funcionalidades Desenvolvidas</h3>
+          <ul class="features-list">
+            <li><strong>Header fixo com navegação suave</strong> entre seções (scroll behavior)</li>
+            <li><strong>Menu hambúrguer responsivo</strong> para mobile</li>
+            <li><strong>Destaque automático</strong> do link de navegação conforme o scroll da página</li>
+            <li><strong>Modal de agendamento</strong> com abertura/fechamento por clique, ESC e clique fora</li>
+            <li><strong>Calendário interativo</strong> com seleção de mês → dia → horário em etapas</li>
+            <li><strong>Bloqueio de horários já agendados</strong> usando <code>sessionStorage</code></li>
+            <li><strong>Integração com WhatsApp</strong> — ao confirmar, monta a mensagem automaticamente e redireciona para o <code>wa.me</code></li>
+            <li><strong>Validação de formulário</strong> com feedbacks de alerta ao usuário</li>
+            <li><strong>Botão flutuante do WhatsApp</strong> na tela</li>
+            <li><strong>SEO básico</strong> com <code>meta description</code> e verificação do Google Search Console</li>
+            <li><strong>Favicon configurado</strong> para desktop e mobile (manifest, apple-touch-icon)</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>🛠️ Tecnologias Utilizadas</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>HTML5</strong> — Estrutura e semântica do site</div>
+            <div class="tech-item"><strong>CSS3</strong> — Estilização, responsividade e layout</div>
+            <div class="tech-item"><strong>JavaScript (Vanilla JS)</strong> — Toda a interatividade, sem frameworks</div>
+            <div class="tech-item"><strong>Font Awesome 6</strong> — Ícones (via CDN)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn gold" onclick="closeProjectModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PROJETO 3 -->
+  <div id="project3Modal" class="modal">
+    <div class="modal-overlay" onclick="closeProject3Modal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProject3Modal()">✕</button>
+      <div class="modal-header">
+        <h2>Sistema de Relatorio Tecnico</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <img src="/static/img/sistema-relatorio-tecnico.png" alt="Sistema de Relatorio Tecnico" style="width:100%; max-height:360px; object-fit:cover; background:#000" />
+        </div>
+        <div class="modal-section">
+          <h3>📋 Resumo</h3>
+          <p>Aplicação web progressiva (PWA) desenvolvida em React + JavaScript para geração de relatórios técnicos de engenharia civil. Permite criar, editar e exportar relatórios de vistoria predial em PDF com suporte a fotos lado a lado, editor de imagens embutido, parecer técnico automatizado e histórico organizado por pastas. Funciona offline e usa Firebase Hosting apenas para servir os ficheiros estáticos.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>✨ Funcionalidades principais</h3>
+          <ul class="features-list">
+            <li><strong>3 tipos de relatório</strong>: Pessoa Física, Condomínio, Empresa (completo/técnico)</li>
+            <li><strong>Formulário dinâmico</strong> com campos que aparecem/ocultam conforme o tipo selecionado</li>
+            <li><strong>Cômodos e elementos</strong> em estrutura em árvore (cômodo → elemento → fotos)</li>
+            <li><strong>Upload de fotos</strong> (galeria ou câmera) com compressão automática (~300KB)</li>
+            <li><strong>Editor de fotos embutido</strong> (linhas, formas, texto, ajustes, desfazer)</li>
+            <li><strong>Fotos lado a lado no PDF</strong> para comparativo (Situação × Termográfica)</li>
+            <li><strong>Parecer técnico</strong> com modelos pré-definidos e preenchimento automático</li>
+            <li><strong>Geração automática de texto</strong> para resumo e condições com base nos dados</li>
+            <li><strong>Histórico de relatórios</strong> organizado por mês e pastas do usuário</li>
+            <li><strong>Assinatura digital</strong> via canvas + upload, salva no relatório</li>
+            <li><strong>Suporte multi-país</strong>: Brasil e Portugal</li>
+            <li><strong>Offline / Client-side</strong>: tudo salvo em localStorage; hospedagem estática no Firebase Hosting</li>
+            <li><strong>Auto-save</strong> de rascunhos no localStorage</li>
+            <li><strong>Responsivo</strong> para mobile e desktop</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>🛠️ Tecnologias usadas</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Linguagem:</strong> JavaScript (ES6+)</div>
+            <div class="tech-item"><strong>Framework:</strong> React 18 (Vite)</div>
+            <div class="tech-item"><strong>PDF:</strong> jsPDF (geração client-side)</div>
+            <div class="tech-item"><strong>Edição de imagens:</strong> Canvas API + browser-image-compression</div>
+            <div class="tech-item"><strong>Armazenamento:</strong> localStorage do navegador</div>
+            <div class="tech-item"><strong>Hospedagem:</strong> Firebase Hosting</div>
+            <div class="tech-item"><strong>Estilização:</strong> CSS puro (components.css)</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn gold" onclick="closeProject3Modal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL FINANCE HUB -->
+  <div id="financeHubModal" class="modal">
+    <div class="modal-overlay" onclick="closeFinanceHubModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeFinanceHubModal()">✕</button>
+      <div class="modal-header">
+        <h2>Finance Hub</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <video id="financeHubVideo" controls style="width:100%; max-height:360px; background:#000">
+            <source src="/static/finance-hub-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="modal-section">
+          <h3>📋 Resumo</h3>
+          <p>Aplicação web full-stack de controle financeiro pessoal com dashboard interativo, gestão de carteiras, transações, orçamentos e monitoramento do mercado de ações e câmbio em tempo real.</p>
+        </div>
+        <div class="modal-section">
+          <h3>✨ Funcionalidades Principais</h3>
+          <ul class="features-list">
+            <li><strong>Autenticação completa</strong> com cadastro, login, confirmação de email e admin</li>
+            <li><strong>Carteiras financeiras</strong> para conta bancária, dinheiro, investimento e cartão de crédito</li>
+            <li><strong>Transações</strong> com categorização, filtros e transferências</li>
+            <li><strong>Orçamentos</strong> por categoria com progresso visual</li>
+            <li><strong>Dashboard</strong> com resumo financeiro, cards e notícias do mercado</li>
+            <li><strong>Mercado de ações</strong> com cotações em tempo real e gráficos de linha</li>
+            <li><strong>Conversor de câmbio</strong> entre 10 moedas com taxas atualizadas</li>
+            <li><strong>Relatórios</strong> de despesas e receitas por categoria</li>
+            <li><strong>Painel Admin</strong> para gestão de usuários</li>
+            <li><strong>Tema claro/escuro</strong> e suporte a múltiplos idiomas</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>🛠️ Stack Tecnológica</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Frontend:</strong> Vue 3 + Nuxt 3 (SSR)</div>
+            <div class="tech-item"><strong>Linguagem:</strong> TypeScript 5.7</div>
+            <div class="tech-item"><strong>Estilização:</strong> Tailwind CSS v4 + Nuxt UI v3</div>
+            <div class="tech-item"><strong>Banco de Dados:</strong> Supabase PostgreSQL + Auth</div>
+            <div class="tech-item"><strong>APIs:</strong> Brapi.dev, Frankfurter API</div>
+            <div class="tech-item"><strong>Build:</strong> Vite via Nuxt 3</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>🏗️ Arquitetura</h3>
+          <p>Monolito full-stack com Nuxt 3, usando file-based routing em <code>app/pages/</code>, APIs REST em <code>server/api/</code>, Supabase com RLS e estado global via <code>useState()</code>.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn gold" onclick="closeFinanceHubModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CONSTRUTRACK -->
+  <div id="constructrackModal" class="modal">
+    <div class="modal-overlay" onclick="closeConstructrackModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeConstructrackModal()">✕</button>
+      <div class="modal-header">
+        <h2>ConstruTrack</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <video id="constructrackVideo" controls style="width:100%; max-height:360px; background:#000">
+            <source src="/static/contrutrack-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="modal-section">
+          <h3>📋 Resumo</h3>
+          <p>ConstruTrack é uma plataforma de gestão de projetos de construção civil que reúne tarefas, equipes, controle de materiais, prazos e relatórios em um único painel. Foi desenvolvida para dar visibilidade ao canteiro de obras, melhorar a comunicação entre equipes e agilizar a entrega de projetos.</p>
+        </div>
+        <div class="modal-section">
+          <h3>✨ Funcionalidades principais</h3>
+          <ul class="features-list">
+            <li><strong>Dashboard de obras</strong> com progresso, custos e prioridades em tempo real</li>
+            <li><strong>Gestão de tarefas e atividades</strong> com atribuição para equipes de campo</li>
+            <li><strong>Controle de materiais</strong> e consumo por etapa de obra</li>
+            <li><strong>Relatórios gerenciais</strong> exportáveis para PDF e planilhas</li>
+            <li><strong>Agenda de obra</strong> com marcos, fases e prazos</li>
+            <li><strong>Notificações e alertas</strong> para atrasos e aprovações pendentes</li>
+            <li><strong>Autenticação segura</strong> com usuários e permissões</li>
+            <li><strong>Responsivo</strong> para desktop e mobile</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>🛠️ Tecnologias utilizadas</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Front-end:</strong> React + Tailwind CSS</div>
+            <div class="tech-item"><strong>Back-end:</strong> Node.js + Express</div>
+            <div class="tech-item"><strong>Banco de dados:</strong> SQL Server</div>
+            <div class="tech-item"><strong>Infraestrutura:</strong> AWS S3 + Azure DevOps</div>
+            <div class="tech-item"><strong>Arquitetura:</strong> Microserviços e APIs RESTful</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn gold" onclick="closeConstructrackModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+
+</body>
+</html>
