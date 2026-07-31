@@ -1,6 +1,10 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 
 app = Flask(__name__)
+
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory(app.static_folder, "favicon.svg", mimetype="image/svg+xml")
 
 @app.route("/")
 def home():
@@ -8,16 +12,11 @@ def home():
 
 @app.route("/portfolio")
 def portfolio():
-    return render_template("portfolio.html")
+    return redirect(url_for("home"))
 
 @app.route("/blog")
 def blog():
-    posts = [
-        {"titulo": "Por que ter um site profissional?", "conteudo": "Ter presença online é essencial para qualquer negócio..."},
-        {"titulo": "Landing Pages que convertem", "conteudo": "Uma página bem estruturada pode dobrar sua taxa de conversão..."},
-        {"titulo": "SEO ou Google Ads?", "conteudo": "Cada estratégia tem seu momento — entenda quando usar cada uma."}
-    ]
-    return render_template("blog.html", posts=posts)
+    return redirect(url_for("home"))
 
 @app.route("/contato", methods=["POST"])
 def contato():
