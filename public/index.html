@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julio Cesar Braga — Analista de TI | Sustentação N2-N3</title>
+  <meta name="description" content="Portfólio de Julio Cesar Braga — Analista de TI com experiência em sustentação N2/N3, suporte, infraestrutura e desenvolvimento de sistemas." />
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-header">
+      <button class="btn hamb" aria-label="Abrir menu" onclick="toggleMobile()">
+        <span class="hamb-icon"></span>
+      </button>
+      <a href="#topo" class="brand-lockup">
+        <img src="/static/img/imghead.png" alt="" class="header-logo" />
+        <span class="brand-name">Julio Cesar Braga</span>
+      </a>
+    </div>
+  </header>
+
+  <div id="backdrop" onclick="toggleMobile(false)"></div>
+  <nav id="drawer" aria-hidden="true">
+    <a href="#sobre" onclick="toggleMobile(false)">Sobre</a>
+    <a href="#experiencia" onclick="toggleMobile(false)">Experiência</a>
+    <a href="#skills" onclick="toggleMobile(false)">Skills</a>
+    <a href="#portfolio" onclick="toggleMobile(false)">Projetos</a>
+    <a href="#contato" onclick="toggleMobile(false)">Contato</a>
+  </nav>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-brand">Julio Cesar Braga</p>
+        <h1>Analista de TI | Sustentação N2-N3</h1>
+        <p class="muted hero-lead">Experiência em suporte técnico, troubleshooting avançado, infraestrutura corporativa e desenvolvimento de soluções internas.</p>
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn gold">Ver projetos</a>
+          <a href="#contato" class="btn">Contato</a>
+          <a href="https://www.linkedin.com/in/julio-cesar-389a39224" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="/static/curriculo-julio-cesar.pdf" class="btn" target="_blank" rel="noopener">Currículo PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section quem-sou-eu">
+      <div class="container quem-sou-eu-container">
+        <div class="quem-sou-eu-info">
+          <h2 class="title-lg">Sobre mim</h2>
+          <p>Analista de TI com experiência em suporte técnico N2/N3, sustentação de sistemas, troubleshooting avançado e infraestrutura corporativa. Atuação em análise e resolução de incidentes críticos, debugging front-end, correção de código e automação de processos internos.</p>
+          <p class="muted" style="margin-top:12px">Vivência com ambientes Windows/Linux, bancos de dados SQL, gestão de chamados e melhoria contínua de SLA. Perfil analítico, proativo e orientado à resolução de problemas. Recife / PE.</p>
+          <ul>
+            <li>Análise e Desenvolvimento de Sistemas — UNINASSAU (2023–2025)</li>
+            <li>Suporte técnico N2/N3 e sustentação de sistemas</li>
+            <li>Administração Windows/Linux e Active Directory</li>
+            <li>Debug front-end, JavaScript e Python</li>
+            <li>SQL Server, Power BI / Looker Studio</li>
+            <li>QA, automação de processos e Cloud (AWS — fundamentos)</li>
+          </ul>
+        </div>
+        <div class="carousel-container">
+          <button class="carousel-btn left" onclick="showPrev()" aria-label="Foto anterior">❮</button>
+          <div class="carousel-single">
+            <img id="carousel-img" src="/static/img/imgdev.jpg" alt="Foto de Julio Cesar Braga" />
+          </div>
+          <button class="carousel-btn right" onclick="showNext()" aria-label="Próxima foto">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2 class="title-lg">Experiência</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-role">Analista de Sustentação / Suporte N2-N3</span>
+              <span class="timeline-period">jan 2026 — jun 2026</span>
+            </div>
+            <h3 class="timeline-company">Ana Gaming</h3>
+            <ul>
+              <li>Atendimento especializado de chamados Nível 2 e 3</li>
+              <li>Investigação e tratativa de incidentes críticos com análise de causa raiz</li>
+              <li>Debug de aplicações front-end e correção pontual de código</li>
+              <li>Sistema interno de gerenciamento de chamados com dashboard operacional</li>
+              <li>Automação para validação de pagamentos de clientes</li>
+              <li>Monitoramento de serviços conforme SLA e documentação técnica</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-role">Assistente de Help Desk II</span>
+              <span class="timeline-period">jul 2025 — jan 2026</span>
+            </div>
+            <h3 class="timeline-company">Sistema FIEPE</h3>
+            <ul>
+              <li>Suporte técnico N2 remoto e presencial</li>
+              <li>Diagnóstico avançado de falhas em ambientes Windows</li>
+              <li>Administração e padronização de ambientes corporativos</li>
+              <li>Responsável técnico por unidade com mais de 300 computadores</li>
+              <li>Configuração de switches, CFTV e ativos de rede</li>
+              <li>Gestão de chamados críticos, SLA e relatórios técnicos</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-role">Analista Administrativo / Apoio ao TI</span>
+              <span class="timeline-period">out 2022 — jul 2025</span>
+            </div>
+            <h3 class="timeline-company">INOVE Terceirização</h3>
+            <ul>
+              <li>Suporte técnico N1/N2 a usuários, computadores e servidores</li>
+              <li>Atualização e manutenção de software e sistemas operacionais</li>
+              <li>Configuração de máquinas, sistemas e impressoras</li>
+              <li>Criação de chatbot em JSON</li>
+              <li>Gestão de equipe administrativa e contratos públicos/privados</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="title-lg">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Suporte & Infra</h3>
+            <ul>
+              <li>Suporte Técnico N2/N3</li>
+              <li>Active Directory</li>
+              <li>Windows / Linux</li>
+              <li>Redes, switches e CFTV</li>
+              <li>Cloud Computing (AWS — fundamentos)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Desenvolvimento</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Debug Front-End</li>
+              <li>QA / Testes de Software</li>
+              <li>Automação de Processos</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Dados</h3>
+            <ul>
+              <li>SQL Server</li>
+              <li>Power BI / Looker Studio</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Perfil</h3>
+            <ul>
+              <li>Analítico</li>
+              <li>Proativo</li>
+              <li>Orientado a resolução de problemas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="title-lg">Projetos</h2>
+        <div class="carousel-container">
+          <button class="carousel-btn left" onclick="moveCarousel(-1)" aria-label="Anterior">❮</button>
+          <div class="carousel" id="carousel">
+
+            <div class="carousel-item projeto-preview">
+              <div class="preview-anim">
+                <div class="projeto-carousel">
+                  <img src="/static/img/contrutrack.png" alt="ConstruTrack" class="preview-img" />
+                </div>
+                <div class="preview-overlay">
+                  <div class="preview-actions">
+                    <button type="button" class="btn-overlay" onclick="openConstructrackModal(false)">Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-title">ConstruTrack</div>
+            </div>
+
+            <div class="carousel-item projeto-preview">
+              <div class="preview-anim">
+                <div class="projeto-carousel">
+                  <img src="/static/img/finance-hub.png" alt="Finance Hub" class="preview-img" />
+                </div>
+                <div class="preview-overlay">
+                  <div class="preview-actions">
+                    <button type="button" class="btn-overlay" onclick="openFinanceHubModal(false)">Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-title">Finance Hub</div>
+            </div>
+
+            <div class="carousel-item projeto-preview">
+              <div class="preview-anim">
+                <div class="projeto-carousel">
+                  <img src="/static/img/ged-recursos-humanos.png" alt="Módulo de Recursos Humanos" class="preview-img projeto-carousel-img" id="projetoImg" />
+                  <button type="button" class="projeto-carousel-btn prev" onclick="mudarImagemProjeto(-1)">❮</button>
+                  <button type="button" class="projeto-carousel-btn next" onclick="mudarImagemProjeto(1)">❯</button>
+                </div>
+                <div class="preview-overlay">
+                  <div class="preview-actions">
+                    <button type="button" class="btn-overlay" onclick="openGedModal()">Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-title">Gestão de Documentos (GED)</div>
+            </div>
+
+            <div class="carousel-item projeto-preview">
+              <div class="preview-anim">
+                <img src="/static/img/jessicafreitas.jpg" alt="Site Jessica Freitas" class="preview-img" />
+                <div class="preview-overlay">
+                  <div class="preview-actions">
+                    <a href="https://68085a242d617168facb0365--verdant-naiad-d58384.netlify.app/" target="_blank" rel="noopener" class="btn-overlay">Ver site</a>
+                    <button type="button" class="btn-overlay" onclick="openProjectModal()">Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-title">Atendimento Psicológico — Jessica Freitas</div>
+            </div>
+
+            <div class="carousel-item projeto-preview">
+              <div class="preview-anim">
+                <div class="projeto-carousel">
+                  <img src="/static/img/sistema-relatorio-tecnico.png" alt="Sistema de Relatório Técnico" class="preview-img" />
+                </div>
+                <div class="preview-overlay">
+                  <div class="preview-actions">
+                    <button type="button" class="btn-overlay" onclick="openProject3Modal(false)">Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-title">Sistema de Relatório Técnico</div>
+            </div>
+
+          </div>
+          <button class="carousel-btn right" onclick="moveCarousel(1)" aria-label="Próximo">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="title-lg">Contato</h2>
+        <p class="muted contact-intro">Recife / PE · <a href="mailto:julicostabraga7@gmail.com">julicostabraga7@gmail.com</a> · <a href="https://www.linkedin.com/in/julio-cesar-389a39224" target="_blank" rel="noopener">LinkedIn</a></p>
+        <div class="contact-links">
+          <a href="https://wa.me/5581987370011" class="btn gold" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="/static/curriculo-julio-cesar.pdf" class="btn" target="_blank" rel="noopener">Baixar currículo</a>
+        </div>
+        <form class="card contato-form" onsubmit="sendEmail(event)">
+          <label>
+            Nome
+            <input class="input" type="text" id="nome" placeholder="Seu nome" required>
+          </label>
+          <label>
+            Email
+            <input class="input" type="email" id="email" placeholder="Seu email" required>
+          </label>
+          <label>
+            Mensagem
+            <textarea class="input" id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+          </label>
+          <button class="btn gold" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div class="dev-info">
+        <img src="/static/img/imgdev.jpg" alt="Julio Cesar Braga" class="dev-photo" />
+        <span>Julio Cesar Costa Braga da Silva</span>
+      </div>
+      <span class="brand-footer">© <span id="year"></span> <b>Julio Cesar Braga</b> — Portfólio</span>
+      <nav class="footer-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5581987370011" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="/static/img/WhatsApp.jpg" alt="WhatsApp" class="whatsapp-icon" />
+  </a>
+
+  <!-- MODAL Jessica Freitas -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="jessica-title">
+    <div class="modal-overlay" onclick="closeProjectModal()"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeProjectModal()" aria-label="Fechar">✕</button>
+      <div class="modal-header">
+        <h2 id="jessica-title">Site Institucional e Agendamento para Psicóloga</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Resumo</h3>
+          <p>Site institucional e de agendamento para psicóloga online. Desenvolvido com HTML5, CSS3 e JavaScript puro (Vanilla JS), sem dependência de frameworks. Conta com sistema de agendamento interativo com calendário dinâmico, bloqueio de horários por sessão, integração com WhatsApp e layout totalmente responsivo para mobile.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Funcionalidades</h3>
+          <ul class="features-list">
+            <li><strong>Header fixo com navegação suave</strong> entre seções</li>
+            <li><strong>Menu hambúrguer responsivo</strong> para mobile</li>
+            <li><strong>Modal de agendamento</strong> com abertura/fechamento por clique, ESC e clique fora</li>
+            <li><strong>Calendário interativo</strong> com seleção de mês → dia → horário</li>
+            <li><strong>Bloqueio de horários</strong> com sessionStorage</li>
+            <li><strong>Integração com WhatsApp</strong> via wa.me</li>
+            <li><strong>Validação de formulário</strong> e SEO básico</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Tecnologias</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>HTML5</strong> — Estrutura e semântica</div>
+            <div class="tech-item"><strong>CSS3</strong> — Estilização e responsividade</div>
+            <div class="tech-item"><strong>JavaScript (Vanilla)</strong> — Interatividade</div>
+            <div class="tech-item"><strong>Font Awesome 6</strong> — Ícones</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://68085a242d617168facb0365--verdant-naiad-d58384.netlify.app/" class="btn" target="_blank" rel="noopener">Abrir site</a>
+        <button type="button" class="btn gold" onclick="closeProjectModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL GED -->
+  <div id="gedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="ged-title">
+    <div class="modal-overlay" onclick="closeGedModal()"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeGedModal()" aria-label="Fechar">✕</button>
+      <div class="modal-header">
+        <h2 id="ged-title">Gestão de Documentos (GED)</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Resumo</h3>
+          <p>Módulo de gestão documental com foco em Recursos Humanos e rotinas administrativas — organização, visualização e fluxo de documentos em ambiente corporativo.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Destaques</h3>
+          <ul class="features-list">
+            <li>Telas de RH e gestão documental</li>
+            <li>Interface orientada a operação diária</li>
+            <li>Carrossel de prévias no portfólio</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn gold" onclick="closeGedModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL Relatório Técnico -->
+  <div id="project3Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="relatorio-title">
+    <div class="modal-overlay" onclick="closeProject3Modal()"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeProject3Modal()" aria-label="Fechar">✕</button>
+      <div class="modal-header">
+        <h2 id="relatorio-title">Sistema de Relatório Técnico</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <video id="project3Video" controls preload="metadata" style="width:100%; max-height:360px; background:#000">
+            <source src="/static/img/projeto-relatorio-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="modal-section">
+          <h3>Resumo</h3>
+          <p>Aplicação web progressiva (PWA) em React + JavaScript para geração de relatórios técnicos de engenharia civil. Permite criar, editar e exportar relatórios de vistoria predial em PDF com fotos lado a lado, editor de imagens, parecer técnico automatizado e histórico por pastas. Funciona offline; Firebase Hosting serve os ficheiros estáticos.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Funcionalidades principais</h3>
+          <ul class="features-list">
+            <li><strong>3 tipos de relatório</strong>: Pessoa Física, Condomínio, Empresa</li>
+            <li><strong>Formulário dinâmico</strong> conforme o tipo selecionado</li>
+            <li><strong>Upload de fotos</strong> com compressão automática</li>
+            <li><strong>Editor de fotos embutido</strong> e comparativo no PDF</li>
+            <li><strong>Parecer técnico</strong> com modelos pré-definidos</li>
+            <li><strong>Histórico</strong> organizado por mês e pastas</li>
+            <li><strong>Assinatura digital</strong> via canvas</li>
+            <li><strong>Offline / Client-side</strong> com localStorage</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Tecnologias</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Linguagem:</strong> JavaScript (ES6+)</div>
+            <div class="tech-item"><strong>Framework:</strong> React 18 (Vite)</div>
+            <div class="tech-item"><strong>PDF:</strong> jsPDF</div>
+            <div class="tech-item"><strong>Imagens:</strong> Canvas API + compressão</div>
+            <div class="tech-item"><strong>Storage:</strong> localStorage</div>
+            <div class="tech-item"><strong>Host:</strong> Firebase Hosting</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn gold" onclick="closeProject3Modal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL Finance Hub -->
+  <div id="financeHubModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="finance-title">
+    <div class="modal-overlay" onclick="closeFinanceHubModal()"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeFinanceHubModal()" aria-label="Fechar">✕</button>
+      <div class="modal-header">
+        <h2 id="finance-title">Finance Hub</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <video id="financeHubVideo" controls preload="metadata" style="width:100%; max-height:360px; background:#000">
+            <source src="/static/finance-hub-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="modal-section">
+          <h3>Resumo</h3>
+          <p>Aplicação web full-stack de controle financeiro pessoal com dashboard interativo, gestão de carteiras, transações, orçamentos e monitoramento do mercado de ações e câmbio em tempo real.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Funcionalidades principais</h3>
+          <ul class="features-list">
+            <li><strong>Autenticação completa</strong> com cadastro, login e admin</li>
+            <li><strong>Carteiras financeiras</strong> (conta, dinheiro, investimento, cartão)</li>
+            <li><strong>Transações</strong> com categorização e filtros</li>
+            <li><strong>Orçamentos</strong> por categoria com progresso visual</li>
+            <li><strong>Dashboard</strong> com resumo e notícias do mercado</li>
+            <li><strong>Mercado de ações</strong> e conversor de câmbio</li>
+            <li><strong>Tema claro/escuro</strong> e múltiplos idiomas</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Stack</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Frontend:</strong> Vue 3 + Nuxt 3</div>
+            <div class="tech-item"><strong>Linguagem:</strong> TypeScript</div>
+            <div class="tech-item"><strong>UI:</strong> Tailwind CSS + Nuxt UI</div>
+            <div class="tech-item"><strong>DB/Auth:</strong> Supabase PostgreSQL</div>
+            <div class="tech-item"><strong>APIs:</strong> Brapi.dev, Frankfurter</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn gold" onclick="closeFinanceHubModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL ConstruTrack -->
+  <div id="constructrackModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="constructrack-title">
+    <div class="modal-overlay" onclick="closeConstructrackModal()"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeConstructrackModal()" aria-label="Fechar">✕</button>
+      <div class="modal-header">
+        <h2 id="constructrack-title">ConstruTrack</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <video id="constructrackVideo" controls preload="metadata" style="width:100%; max-height:360px; background:#000">
+            <source src="/static/contrutrack-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="modal-section">
+          <h3>Resumo</h3>
+          <p>Plataforma de gestão de projetos de construção civil que reúne tarefas, equipes, controle de materiais, prazos e relatórios em um único painel — para dar visibilidade ao canteiro e agilizar entregas.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Funcionalidades principais</h3>
+          <ul class="features-list">
+            <li><strong>Dashboard de obras</strong> com progresso e custos</li>
+            <li><strong>Gestão de tarefas</strong> com atribuição para equipes</li>
+            <li><strong>Controle de materiais</strong> por etapa</li>
+            <li><strong>Relatórios</strong> exportáveis</li>
+            <li><strong>Agenda de obra</strong> com marcos e prazos</li>
+            <li><strong>Autenticação</strong> com usuários e permissões</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Tecnologias</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Front-end:</strong> React + Tailwind CSS</div>
+            <div class="tech-item"><strong>Back-end:</strong> Node.js + Express</div>
+            <div class="tech-item"><strong>Banco:</strong> SQL Server</div>
+            <div class="tech-item"><strong>Infra:</strong> AWS S3 + Azure DevOps</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn gold" onclick="closeConstructrackModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

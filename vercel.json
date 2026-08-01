@@ -1,14 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/((?!static/).*)",
-      "destination": "/api/index"
-    }
-  ],
-  "functions": {
-    "api/index.py": {
-      "includeFiles": "{App.py,templates/**}",
-      "excludeFiles": "{**/*.mp4,static/**}"
-    }
-  }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public"
 }
