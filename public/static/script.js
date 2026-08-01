@@ -123,11 +123,11 @@ function closeGedModal() {
 }
 
 function openProject3Modal(playVideo = false) {
-  openModal('project3Modal', 'project3Video', playVideo);
+  openModal('project3Modal');
 }
 
 function closeProject3Modal() {
-  closeModal('project3Modal', 'project3Video');
+  closeModal('project3Modal');
 }
 
 function openConstructrackModal(playVideo = false) {
