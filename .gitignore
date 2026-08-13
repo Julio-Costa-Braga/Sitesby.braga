@@ -1,3 +1,5 @@
 static/contrutrack-video-full.mp4
 static/contrutrack-video-web.mp4
 static/img/projeto-relatorio-video.mp4
+__pycache__/
+*.pyc

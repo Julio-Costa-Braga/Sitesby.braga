@@ -15,18 +15,6 @@ function moveCarousel(dir) {
   carousel.scrollBy({ left: dir * 300, behavior: 'smooth' });
 }
 
-function sendEmail(event) {
-  event.preventDefault();
-  const nome = document.getElementById('nome').value;
-  const email = document.getElementById('email').value;
-  const mensagem = document.getElementById('mensagem').value;
-
-  const subject = encodeURIComponent('Contato pelo portfólio — Julio Cesar Braga');
-  const body = encodeURIComponent(`Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
-
-  window.location.href = `mailto:julicostabraga7@gmail.com?subject=${subject}&body=${body}`;
-}
-
 const images = [
   '/static/img/imgdev.jpg',
   '/static/img/img2.jpg',
@@ -52,23 +40,6 @@ function showNext() {
 }
 
 showImage(current);
-
-const projetoImagens = [
-  '/static/img/ged-recursos-humanos.png',
-  '/static/img/ged-gestao.png',
-];
-let projetoImagemAtual = 0;
-
-function mudarImagemProjeto(direcao) {
-  projetoImagemAtual += direcao;
-  if (projetoImagemAtual < 0) {
-    projetoImagemAtual = projetoImagens.length - 1;
-  } else if (projetoImagemAtual >= projetoImagens.length) {
-    projetoImagemAtual = 0;
-  }
-  const img = document.getElementById('projetoImg');
-  if (img) img.src = projetoImagens[projetoImagemAtual];
-}
 
 function safePlay(video) {
   if (!video) return;
@@ -114,20 +85,28 @@ function closeProjectModal() {
   closeModal('projectModal');
 }
 
-function openGedModal() {
-  openModal('gedModal');
+function openGedModal(playVideo = false) {
+  openModal('gedModal', 'gedVideo', playVideo);
 }
 
 function closeGedModal() {
-  closeModal('gedModal');
+  closeModal('gedModal', 'gedVideo');
+}
+
+function openEcommerceModal(playVideo = false) {
+  openModal('ecommerceModal', 'ecommerceVideo', playVideo);
+}
+
+function closeEcommerceModal() {
+  closeModal('ecommerceModal', 'ecommerceVideo');
 }
 
 function openProject3Modal(playVideo = false) {
-  openModal('project3Modal');
+  openModal('project3Modal', 'project3Video', playVideo);
 }
 
 function closeProject3Modal() {
-  closeModal('project3Modal');
+  closeModal('project3Modal', 'project3Video');
 }
 
 function openConstructrackModal(playVideo = false) {
@@ -150,6 +129,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key !== 'Escape') return;
   closeProjectModal();
   closeGedModal();
+  closeEcommerceModal();
   closeProject3Modal();
   closeConstructrackModal();
   closeFinanceHubModal();

@@ -43,6 +43,10 @@
           <a href="#portfolio" class="btn gold">Ver projetos</a>
           <a href="#contato" class="btn">Contato</a>
           <a href="https://www.linkedin.com/in/julio-cesar-389a39224" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Julio-Costa-Braga" class="btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
           <a href="/static/curriculo-julio-cesar.pdf" class="btn" target="_blank" rel="noopener">Currículo PDF</a>
         </div>
       </div>
@@ -132,38 +136,59 @@
         <h2 class="title-lg">Skills</h2>
         <div class="skills-grid">
           <div class="skill-group">
-            <h3>Suporte & Infra</h3>
+            <h3>Frontend</h3>
             <ul>
-              <li>Suporte Técnico N2/N3</li>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React / Next.js</li>
+              <li>Vue / Nuxt</li>
+              <li>Tailwind CSS</li>
+              <li>Layout responsivo (mobile-first)</li>
+              <li>Debug front-end</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js / Express</li>
+              <li>Python / Flask</li>
+              <li>APIs REST</li>
+              <li>PostgreSQL / SQL Server / SQLite</li>
+              <li>Prisma ORM</li>
+              <li>Supabase</li>
+              <li>Autenticação e segurança (JWT, Zod)</li>
+              <li>Testes automatizados</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud</h3>
+            <ul>
+              <li>Vercel / Render</li>
+              <li>Neon PostgreSQL</li>
+              <li>Firebase Hosting</li>
+              <li>AWS (fundamentos)</li>
+              <li>Deploy e sustentação de apps</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Automação</h3>
+            <ul>
+              <li>Automação de processos internos</li>
+              <li>Validação automatizada de pagamentos</li>
+              <li>Chatbot em JSON</li>
+              <li>Scripts em Python / PowerShell</li>
+              <li>Dashboards e relatórios (Power BI / Looker Studio)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Suporte</h3>
+            <ul>
+              <li>Suporte técnico N2/N3</li>
               <li>Active Directory</li>
               <li>Windows / Linux</li>
               <li>Redes, switches e CFTV</li>
-              <li>Cloud Computing (AWS — fundamentos)</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Desenvolvimento</h3>
-            <ul>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>Debug Front-End</li>
-              <li>QA / Testes de Software</li>
-              <li>Automação de Processos</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Dados</h3>
-            <ul>
-              <li>SQL Server</li>
-              <li>Power BI / Looker Studio</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Perfil</h3>
-            <ul>
-              <li>Analítico</li>
-              <li>Proativo</li>
-              <li>Orientado a resolução de problemas</li>
+              <li>Gestão de chamados e SLA</li>
+              <li>Troubleshooting avançado</li>
             </ul>
           </div>
         </div>
@@ -176,6 +201,18 @@
         <div class="carousel-container">
           <button class="carousel-btn left" onclick="moveCarousel(-1)" aria-label="Anterior">❮</button>
           <div class="carousel" id="carousel">
+
+            <div class="carousel-item projeto-preview">
+              <div class="preview-anim">
+                <img src="/static/img/ecommerce-sacole.png" alt="E-commerce Sacolé Gourmet da Ceci" class="preview-img" />
+                <div class="preview-overlay">
+                  <div class="preview-actions">
+                    <button type="button" class="btn-overlay" onclick="openEcommerceModal(false)">Detalhes</button>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-title">E-commerce — Sacolé Gourmet da Ceci</div>
+            </div>
 
             <div class="carousel-item projeto-preview">
               <div class="preview-anim">
@@ -207,11 +244,7 @@
 
             <div class="carousel-item projeto-preview">
               <div class="preview-anim">
-                <div class="projeto-carousel">
-                  <img src="/static/img/ged-recursos-humanos.png" alt="Módulo de Recursos Humanos" class="preview-img projeto-carousel-img" id="projetoImg" />
-                  <button type="button" class="projeto-carousel-btn prev" onclick="mudarImagemProjeto(-1)">❮</button>
-                  <button type="button" class="projeto-carousel-btn next" onclick="mudarImagemProjeto(1)">❯</button>
-                </div>
+                <img src="/static/img/ged-video-thumb.png" alt="Gestão Eletrônica de Documentos (GED)" class="preview-img" />
                 <div class="preview-overlay">
                   <div class="preview-actions">
                     <button type="button" class="btn-overlay" onclick="openGedModal()">Detalhes</button>
@@ -257,26 +290,15 @@
     <section id="contato" class="section">
       <div class="container">
         <h2 class="title-lg">Contato</h2>
-        <p class="muted contact-intro">Recife / PE · <a href="mailto:julicostabraga7@gmail.com">julicostabraga7@gmail.com</a> · <a href="https://www.linkedin.com/in/julio-cesar-389a39224" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="muted contact-intro">Recife / PE · <a href="mailto:julicostabraga7@gmail.com">julicostabraga7@gmail.com</a> · <a href="https://www.linkedin.com/in/julio-cesar-389a39224" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/Julio-Costa-Braga" target="_blank" rel="noopener">GitHub</a></p>
         <div class="contact-links">
           <a href="https://wa.me/5581987370011" class="btn gold" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://github.com/Julio-Costa-Braga" class="btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
           <a href="/static/curriculo-julio-cesar.pdf" class="btn" target="_blank" rel="noopener">Baixar currículo</a>
         </div>
-        <form class="card contato-form" onsubmit="sendEmail(event)">
-          <label>
-            Nome
-            <input class="input" type="text" id="nome" placeholder="Seu nome" required>
-          </label>
-          <label>
-            Email
-            <input class="input" type="email" id="email" placeholder="Seu email" required>
-          </label>
-          <label>
-            Mensagem
-            <textarea class="input" id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-          </label>
-          <button class="btn gold" type="submit">Enviar</button>
-        </form>
       </div>
     </section>
   </main>
@@ -350,24 +372,103 @@
     <div class="modal-content">
       <button type="button" class="modal-close" onclick="closeGedModal()" aria-label="Fechar">✕</button>
       <div class="modal-header">
-        <h2 id="ged-title">Gestão de Documentos (GED)</h2>
+        <h2 id="ged-title">Gestão Eletrônica de Documentos (GED) — Faculdade Nova Roma</h2>
       </div>
       <div class="modal-body">
-        <div class="modal-section">
-          <h3>Resumo</h3>
-          <p>Módulo de gestão documental com foco em Recursos Humanos e rotinas administrativas — organização, visualização e fluxo de documentos em ambiente corporativo.</p>
+        <div class="modal-section video-section">
+          <video id="gedVideo" controls preload="metadata" style="width:100%; max-height:360px; background:#000">
+            <source src="/static/ged-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
         </div>
         <div class="modal-section">
-          <h3>Destaques</h3>
+          <h3>Resumo</h3>
+          <p>Em parceria, desenvolvemos de ponta a ponta um GED para a Faculdade Nova Roma, transformando processos manuais em uma solução digital, organizada e segura. O sistema foi pensado para centralizar documentos e facilitar a rotina de áreas como RH, financeiro e administrativo.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Funcionalidades</h3>
           <ul class="features-list">
-            <li>Telas de RH e gestão documental</li>
-            <li>Interface orientada a operação diária</li>
-            <li>Carrossel de prévias no portfólio</li>
+            <li><strong>Pré-cadastramento, captura e classificação</strong> de documentos</li>
+            <li><strong>Gestão de colaboradores</strong> e controle de férias</li>
+            <li><strong>Envio de documentos por e-mail</strong> com múltiplos anexos</li>
+            <li><strong>Assinatura eletrônica</strong> com registro de nome, CPF e data/hora</li>
+            <li><strong>Controle de acesso</strong> por perfil</li>
+            <li><strong>Central de notificações</strong></li>
+            <li><strong>Lixeira</strong> com recuperação</li>
+            <li><strong>Trilhas de auditoria</strong></li>
           </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Stack</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Back-end:</strong> Node.js + Express</div>
+            <div class="tech-item"><strong>Linguagem:</strong> JavaScript</div>
+            <div class="tech-item"><strong>Front-end:</strong> Tailwind CSS</div>
+            <div class="tech-item"><strong>Banco:</strong> PostgreSQL (Supabase)</div>
+            <div class="tech-item"><strong>Segurança:</strong> JWT + Zod</div>
+            <div class="tech-item"><strong>E-mail:</strong> Resend</div>
+            <div class="tech-item"><strong>QA:</strong> Testes automatizados</div>
+            <div class="tech-item"><strong>Deploy:</strong> Produção com domínio próprio</div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Aprendizado</h3>
+          <p>Oportunidade de colocar em prática conhecimentos de <strong>Full Stack, APIs, banco de dados, segurança, arquitetura e sustentação</strong> — com um reforço importante: antes de pensar no código, é fundamental entender o problema e o fluxo do negócio.</p>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn gold" onclick="closeGedModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL E-commerce -->
+  <div id="ecommerceModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="ecommerce-title">
+    <div class="modal-overlay" onclick="closeEcommerceModal()"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeEcommerceModal()" aria-label="Fechar">✕</button>
+      <div class="modal-header">
+        <h2 id="ecommerce-title">E-commerce — Sacolé Gourmet da Ceci</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section video-section">
+          <video id="ecommerceVideo" controls preload="metadata" style="width:100%; max-height:360px; background:#000">
+            <source src="/static/ecommerce-sacole-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="modal-section">
+          <h3>Resumo</h3>
+          <p>E-commerce completo desenvolvido para a <strong>Sacolé Gourmet da Ceci</strong>, com foco em facilitar as vendas e organizar toda a gestão do negócio. Oportunidade de aprofundar conhecimentos em <strong>Next.js e TypeScript</strong> na prática, trabalhando com Server Components, Server Actions, transações no banco, validações e testes automatizados.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Funcionalidades</h3>
+          <ul class="features-list">
+            <li><strong>Carrinho e checkout</strong> completos</li>
+            <li><strong>Pedidos via WhatsApp</strong></li>
+            <li><strong>Entrega ou retirada</strong> no pedido</li>
+            <li><strong>Controle automático de estoque</strong></li>
+            <li><strong>Painel administrativo</strong></li>
+            <li><strong>Cadastro de produtos</strong>, ingredientes e receitas</li>
+            <li><strong>Cálculo de custos e rentabilidade</strong></li>
+            <li><strong>Histórico de movimentações</strong></li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h3>Stack</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><strong>Framework:</strong> Next.js 16 + React 19</div>
+            <div class="tech-item"><strong>Linguagem:</strong> TypeScript</div>
+            <div class="tech-item"><strong>ORM:</strong> Prisma</div>
+            <div class="tech-item"><strong>Banco:</strong> PostgreSQL (Neon)</div>
+            <div class="tech-item"><strong>UI:</strong> Tailwind CSS</div>
+            <div class="tech-item"><strong>Deploy:</strong> Render</div>
+            <div class="tech-item"><strong>Qualidade:</strong> 41 testes automatizados + lint + typecheck</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn gold" onclick="closeEcommerceModal()">Fechar</button>
       </div>
     </div>
   </div>
@@ -382,7 +483,10 @@
       </div>
       <div class="modal-body">
         <div class="modal-section video-section">
-          <img src="/static/img/sistema-relatorio-tecnico.png" alt="Sistema de Relatório Técnico" style="width:100%; max-height:360px; object-fit:cover; background:#000" />
+          <video id="project3Video" controls preload="metadata" style="width:100%; max-height:360px; background:#000">
+            <source src="/static/img/projeto-relatorio-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
         </div>
         <div class="modal-section">
           <h3>Resumo</h3>
