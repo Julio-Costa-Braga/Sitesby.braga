@@ -15,32 +15,6 @@ function moveCarousel(dir) {
   carousel.scrollBy({ left: dir * 300, behavior: 'smooth' });
 }
 
-const images = [
-  '/static/img/imgdev.jpg',
-  '/static/img/img2.jpg',
-  '/static/img/img3.jpg',
-  '/static/img/img4.jpg',
-  '/static/img/img5.jpeg',
-];
-let current = 0;
-
-function showImage(idx) {
-  const img = document.getElementById('carousel-img');
-  if (img) img.src = images[idx];
-}
-
-function showPrev() {
-  current = (current - 1 + images.length) % images.length;
-  showImage(current);
-}
-
-function showNext() {
-  current = (current + 1) % images.length;
-  showImage(current);
-}
-
-showImage(current);
-
 function safePlay(video) {
   if (!video) return;
   const playPromise = video.play();
